@@ -20,7 +20,7 @@ jobs:
         run: docker build -t ${{ secrets.DOCKER_USERNAME }}/devops-cicd-project:latest .
 
       - name: Push to Docker Hub
-        run: docker push ${{ secrets.DOCKER_USERNAME }}/devops-cicd-project:latest .
+        run: docker push ${{ secrets.DOCKER_USERNAME }}/devops-cicd-project:latest 
 
       
   
